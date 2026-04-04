@@ -1,0 +1,36 @@
+# Models / heavy files
+models/
+*.tflite
+*.bin
+*.gguf
+
+# Audio
+*.wav
+*.mp3
+
+# Virtual environments
+venv/
+.env/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Secrets
+.env.local
+.env.*.local

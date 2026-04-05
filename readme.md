@@ -12,6 +12,8 @@ Les requis sont :
 
 # Plan de développement
 
+J'en suis pour l'instant au stade V1
+
 ## V1
 
 Le but est de tester les différentes briques de base qu'on va fatalement utiliser, sous les angles de la faisabilité, de la précision, de la latence.
@@ -58,6 +60,60 @@ Prochaine brique à tester : SVOX Pico TTS
 ## V2
 
 - création du wake word personnalisé
+
+```mermaid
+---
+config:
+  layout: dagre
+---
+flowchart TB
+    Start([Start]) --> Idle[Idle: waiting for wake word]
+
+    Idle --> Wake[/Wake word said/]
+    Wake --> Listen[/Record or listen live/]
+    Listen --> DetectIntent[Process intent]
+    DetectIntent --> ConfirmIntent[/Confirm intent/]
+    ConfirmIntent --> IsConfirmIntent{Intent confirmed?}
+
+    IsConfirmIntent -- No --> Listen
+    IsConfirmIntent -- Yes --> IsIntent{Which intent?}
+
+    IsIntent -- Read a story --> ReadingInit[Enter reading mode]
+    IsIntent -- Take a note --> NotePrompt[/Please record the note/]
+    IsIntent -- Other request --> HandleOther[Handle other intent]
+
+    NotePrompt --> NoteListen[/Record note/]
+    NoteListen --> NoteSave[Save note]
+    NoteSave --> Idle
+
+    HandleOther --> Idle
+
+    subgraph ReadingMode [Reading mode]
+        ReadingInit --> StartPlayback[Start audio playback]
+        StartPlayback --> ReadingLoop[Reading active]
+
+        ReadingLoop --> CheckCommand{Command detected?}
+        ReadingLoop --> CheckTime{Is it midnight?}
+        ReadingLoop --> EndOfStory{Story finished?}
+
+        CheckCommand -- No --> ReadingLoop
+        CheckCommand -- Stop --> StopPlayback[Stop playback]
+        CheckCommand -- Volume up --> VolumeUp[Increase volume]
+        CheckCommand -- Volume down --> VolumeDown[Decrease volume]
+
+        VolumeUp --> ReadingLoop
+        VolumeDown --> ReadingLoop
+
+        CheckTime -- No --> ReadingLoop
+        CheckTime -- Yes --> Shutdown[Shutdown device]
+
+        EndOfStory -- No --> ReadingLoop
+        EndOfStory -- Yes --> ExitReading[Exit reading mode]
+    end
+
+    StopPlayback --> Idle
+    ExitReading --> Idle
+```
 
 ## V3
 

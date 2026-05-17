@@ -100,8 +100,8 @@
     {
       "id": "bel",
       "title": "Beren et Luthien",
-      "series": None,
-      "volume": None,
+      "series": null,
+      "volume": null,
       "path": "/home/fabien/audiobooks/bel.mp3",
       "aliases": [],
       "language": "fr"
@@ -157,6 +157,6 @@
         "Tome deux d'Eragon"
       ],
       "language": "fr"
-    },
+    }
   ]
 }

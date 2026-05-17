@@ -41,7 +41,7 @@ if __name__ == "__main__":
 
     intent = Intent(
         intent="play_audiobook",
-        book_id="rdf_04",
+        book_id="lrdf_04",
         start_mode=StartMode.BEGINNING,
         confidence=0.92,
         raw_text="lis les royaumes de feu tome 4 depuis le début",

@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "books": [
+    {
+      "id": "lgdc_02",
+      "title": "A feu et à sang",
+      "series": "La guerre des clans",
+      "volume": 2,
+      "path": "/home/fabien/audiobooks/lgdc_02.mp3",
+      "aliases": [
+        "La guerre des clans tome deux",
+        "Tome deux de la guerre des clans"
+      ],
+      "language": "fr"
+    },
+    {
+      "id": "lgdc_01",
+      "title": "Retour à l'état sauvage",
+      "series": "La guerre des clans",
+      "volume": 1,
+      "path": "/home/fabien/audiobooks/lgdc_01.mp3",
+      "aliases": [
+        "La guerre des clans tome un",
+        "Tome un de la guerre des clans"
+      ],
+      "language": "fr"
+    },
+    {
+      "id": "ast_02",
+      "title": "Astérix Gladiateur et le Tour de Gaule d'Astérix",
+      "series": "Astérix",
+      "volume": 2,
+      "path": "/home/fabien/audiobooks/ast_gladiateur_tour-de-gaule.mp3",
+      "aliases": [
+        "Astérix Gladiateur",
+        "le Tour de Gaule d'Astérix"
+      ],
+      "language": "fr"
+    },
+    {
+      "id": "lrdf_03",
+      "title": "Au coeur de la jungle",
+      "series": "Les Royaumes de feu",
+      "volume": 3,
+      "path": "/home/fabien/audiobooks/lrdf_03.mp3",
+      "aliases": [
+        "Les Royaumes de feu tome trois",
+        "Tome trois des Royaumes de feu"
+      ],
+      "language": "fr"
+    },
+    {
+      "id": "lrdf_05",
+      "title": "La nuit la plus claire",
+      "series": "Les Royaumes de feu",
+      "volume": 5,
+      "path": "/home/fabien/audiobooks/lrdf_05.mp3",
+      "aliases": [
+        "Les Royaumes de feu tome cinq",
+        "Tome cinq des Royaumes de feu"
+      ],
+      "language": "fr"
+    },
+    {
+      "id": "lrdf_02",
+      "title": "La princesse disparue",
+      "series": "Les Royaumes de feu",
+      "volume": 2,
+      "path": "/home/fabien/audiobooks/lrdf_02.mp3",
+      "aliases": [
+        "Les Royaumes de feu tome deux",
+        "Tome deux des Royaumes de feu"
+      ],
+      "language": "fr"
+    },
+    {
+      "id": "lrdf_01",
+      "title": "La prophétie",
+      "series": "Les Royaumes de feu",
+      "volume": 1,
+      "path": "/home/fabien/audiobooks/lrdf_01.mp3",
+      "aliases": [
+        "Les Royaumes de feu tome un",
+        "Tome un des Royaumes de feu"
+      ],
+      "language": "fr"
+    },
+    {
+      "id": "lrdf_04",
+      "title": "L'île au secret",
+      "series": "Les Royaumes de feu",
+      "volume": 4,
+      "path": "/home/fabien/audiobooks/lrdf_04.mp3",
+      "aliases": [
+        "Les Royaumes de feu tome quatre",
+        "Tome quatre des Royaumes de feu"
+      ],
+      "language": "fr"
+    },
+    {
+      "id": "bel",
+      "title": "Beren et Luthien",
+      "series": None,
+      "volume": None,
+      "path": "/home/fabien/audiobooks/bel.mp3",
+      "aliases": [],
+      "language": "fr"
+    },
+    {
+      "id": "lqde_01",
+      "title": "D'un monde à l'autre",
+      "series": "La Quête d'Ewilan",
+      "volume": 1,
+      "path": "/home/fabien/audiobooks/lqde_01.mp3",
+      "aliases": [
+        "La Quête d'Ewilan Tome un",
+        "Tome un de La Quête d'Ewilan",
+        "Ewilan Tome un",
+        "Tome un d'Ewilan"
+      ],
+      "language": "fr"
+    },
+    {
+      "id": "lqde_02",
+      "title": "Les frontières de glace",
+      "series": "La Quête d'Ewilan",
+      "volume": 2,
+      "path": "/home/fabien/audiobooks/lqde_02.mp3",
+      "aliases": [
+        "La Quête d'Ewilan Tome deux",
+        "Tome deux de La Quête d'Ewilan",
+        "Ewilan Tome deux",
+        "Tome deux d'Ewilan"
+      ],
+      "language": "fr"
+    },
+    {
+      "id": "eragon_01",
+      "title": "Eragon",
+      "series": "Eragon",
+      "volume": 1,
+      "path": "/home/fabien/audiobooks/eragon_01.mp3",
+      "aliases": [
+        "Eragon Tome un",
+        "Tome un d'Eragon"
+      ],
+      "language": "fr"
+    },
+    {
+      "id": "eragon_02",
+      "title": "L'aîné",
+      "series": "Eragon",
+      "volume": 2,
+      "path": "/home/fabien/audiobooks/eragon_02.mp3",
+      "aliases": [
+        "Eragon Tome deux",
+        "Tome deux d'Eragon"
+      ],
+      "language": "fr"
+    },
+  ]
+}

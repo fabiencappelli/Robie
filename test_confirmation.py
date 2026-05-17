@@ -3,6 +3,8 @@ from pathlib import Path
 
 from classes import Library, Intent, StartMode
 
+from tts import speak
+
 
 def load_library(path: str = "library.json") -> Library:
     data = json.loads(Path(path).read_text(encoding="utf-8"))
@@ -49,3 +51,4 @@ if __name__ == "__main__":
 
     question = build_confirmation_question(intent, library)
     print(question)
+    speak(question)

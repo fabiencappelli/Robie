@@ -8,7 +8,7 @@
       "volume": 2,
       "path": "/home/fabien/audiobooks/lgdc_02.mp3",
       "aliases": [
-        "La guerre des clans tome deux",
+        "guerre des clans tome deux",
         "Tome deux de la guerre des clans"
       ],
       "language": "fr"
@@ -20,7 +20,7 @@
       "volume": 1,
       "path": "/home/fabien/audiobooks/lgdc_01.mp3",
       "aliases": [
-        "La guerre des clans tome un",
+        "guerre des clans tome un",
         "Tome un de la guerre des clans"
       ],
       "language": "fr"
@@ -33,7 +33,7 @@
       "path": "/home/fabien/audiobooks/ast_gladiateur_tour-de-gaule.mp3",
       "aliases": [
         "Astérix Gladiateur",
-        "le Tour de Gaule d'Astérix"
+        "Tour de Gaule d'Astérix"
       ],
       "language": "fr"
     },
@@ -44,7 +44,7 @@
       "volume": 3,
       "path": "/home/fabien/audiobooks/lrdf_03.mp3",
       "aliases": [
-        "Les Royaumes de feu tome trois",
+        "Royaumes de feu tome trois",
         "Tome trois des Royaumes de feu"
       ],
       "language": "fr"
@@ -56,7 +56,7 @@
       "volume": 5,
       "path": "/home/fabien/audiobooks/lrdf_05.mp3",
       "aliases": [
-        "Les Royaumes de feu tome cinq",
+        "Royaumes de feu tome cinq",
         "Tome cinq des Royaumes de feu"
       ],
       "language": "fr"
@@ -68,7 +68,7 @@
       "volume": 2,
       "path": "/home/fabien/audiobooks/lrdf_02.mp3",
       "aliases": [
-        "Les Royaumes de feu tome deux",
+        "Royaumes de feu tome deux",
         "Tome deux des Royaumes de feu"
       ],
       "language": "fr"
@@ -80,7 +80,7 @@
       "volume": 1,
       "path": "/home/fabien/audiobooks/lrdf_01.mp3",
       "aliases": [
-        "Les Royaumes de feu tome un",
+        "Royaumes de feu tome un",
         "Tome un des Royaumes de feu"
       ],
       "language": "fr"
@@ -92,7 +92,7 @@
       "volume": 4,
       "path": "/home/fabien/audiobooks/lrdf_04.mp3",
       "aliases": [
-        "Les Royaumes de feu tome quatre",
+        "Royaumes de feu tome quatre",
         "Tome quatre des Royaumes de feu"
       ],
       "language": "fr"
@@ -113,7 +113,7 @@
       "volume": 1,
       "path": "/home/fabien/audiobooks/lqde_01.mp3",
       "aliases": [
-        "La Quête d'Ewilan Tome un",
+        "Quête d'Ewilan Tome un",
         "Tome un de La Quête d'Ewilan",
         "Ewilan Tome un",
         "Tome un d'Ewilan"
@@ -127,7 +127,7 @@
       "volume": 2,
       "path": "/home/fabien/audiobooks/lqde_02.mp3",
       "aliases": [
-        "La Quête d'Ewilan Tome deux",
+        "Quête d'Ewilan Tome deux",
         "Tome deux de La Quête d'Ewilan",
         "Ewilan Tome deux",
         "Tome deux d'Ewilan"

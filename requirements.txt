@@ -26,3 +26,5 @@ pydantic
 ollama
 python-mpv-jsonipc
 langgraph
+
+rapidfuzz

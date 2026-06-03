@@ -77,7 +77,7 @@ def search_books(
     best_by_book = {}
 
     for entry in index:
-        score = fuzz.WRatio(normalized_query, entry.normalized_text)
+        score = fuzz.token_sort_ratio(normalized_query, entry.normalized_text)
 
         if score < min_score:
             continue

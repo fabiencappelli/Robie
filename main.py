@@ -13,6 +13,10 @@ import sounddevice as sd
 from openwakeword.model import Model
 from vosk import KaldiRecognizer, Model as VoskModel
 
+from classes import Library
+from confirmation import build_confirmation_question
+from intent_router import build_intent_from_text
+
 SAMPLE_RATE = 16000
 CHUNK_SIZE = 1280
 AUDIO_DEVICE_INDEX = None
@@ -141,12 +145,17 @@ def speak_text(text):
     subprocess.run(["aplay", TTS_WAV], check=True)
 
 
+def load_library(path: str = "library.json") -> Library:
+    data = json.loads(Path(path).read_text(encoding="utf-8"))
+    return Library.model_validate(data)
+
+
 def main():
     set_led(COLOR_OFF)
 
     wake_model = make_wake_model()
     vosk_model = make_vosk_model()
-
+    library = load_library()
     print("Robie en veille. LEDs éteintes.")
     stream = open_stream()
 
@@ -197,10 +206,17 @@ def main():
                     # Petite pause pour lisibilité UX
                     time.sleep(0.2)
 
-                    spoken_text = (
-                        f"Tu as dit : {text}" if text else "Je n'ai rien compris."
-                    )
-                    speak_text(spoken_text)
+                    if not text:
+                        speak_text("Je n'ai rien compris.")
+                    else:
+                        intent = build_intent_from_text(text, library)
+
+                        if intent.intent == "unknown" or not intent.book_id:
+                            speak_text("Je n'ai pas trouvé le livre demandé.")
+                        else:
+                            question = build_confirmation_question(intent, library)
+                            print(f"Confirmation : {question}")
+                            speak_text(question)
 
                     set_led(COLOR_OFF)
                     print("Retour en veille.")

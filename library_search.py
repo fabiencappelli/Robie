@@ -34,9 +34,8 @@ def build_search_index(library: Library) -> list[SearchIndexEntry]:
             *book.aliases,
         ]
 
-        if book.series:
-            texts.append(book.series)
-            texts.append(f"{book.series} {book.title}")
+        if book.series and book.volume:
+            texts.append(f"{book.series} {book.volume}")
 
         seen = set()
 
@@ -78,7 +77,7 @@ def search_books(
     best_by_book = {}
 
     for entry in index:
-        score = fuzz.WRatio(normalized_query, entry.normalized_text)
+        score = fuzz.token_set_ratio(normalized_query, entry.normalized_text)
 
         if score < min_score:
             continue
